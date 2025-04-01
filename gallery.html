@@ -9,6 +9,24 @@
 </head>
 <body>
 
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Hamburger Button -->
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
     <header>
         <h1>Gallery</h1>
     </header>
@@ -46,6 +64,12 @@
             <img src="images/post7.jpg" alt="Gallery Image 6" class="gallery-item">
         </div>
     </section>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 
 </body>
 </html>

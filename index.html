@@ -17,17 +17,25 @@
     <!-- Gradient Overlay -->
     <div class="gradient-overlay"></div>
 
-
-    <!-- Navbar Section -->
+    <!-- hamburger ahhhh-->
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">Aerial classes</a>
+            <!-- Hamburger Button -->
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    
+            <!-- Navigation Links -->
             <ul class="nav-links">
+                <li><a href="index.html">Homepage</a></li>
                 <li><a href="classes.html">Classes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </div>
     </nav>
-
+    
+    
+    
+    
+    
 
 
     <!-- Hero Section -->
@@ -102,51 +110,38 @@
           
         
 
-        <!-- Class Timings Section (Without Box) -->
-        <!-- Class Timings Section (Full Width Background) -->
-        <!-- Class Timings Section (Merged Section without Box) -->
-        <!-- Class Timings Section (Clean Look) -->
         <!-- Class Timings Section (Updated Layout) -->
         <section class="class-timings-section">
             <h2>Class Timings</h2>
             <table class="timing-table">
                 <thead>
                     <tr>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>12:00pm - 1:30pm</td>
-                        <td>12:00pm - 1:30pm</td>
-                        <td>12:00pm - 1:30pm</td>
-                        <td>12:00pm - 1:30pm</td>
-                        <td>12:00pm - 1:30pm</td>
+                        <td>12pm - 1:30pm</td>
+                        <td>12pm - 1:30pm</td>
+                        <td>12pm - 1:30pm</td>
+                        <td>12pm - 1:30pm</td>
+                        <td>12pm - 1:30pm</td>
                     </tr>
                     <tr>
-                        <td>1:30pm - 3:00pm</td>
-                        <td>1:30pm - 3:00pm</td>
-                        <td>1:30pm - 3:00pm</td>
-                        <td>1:30pm - 3:00pm</td>
-                        <td>1:30pm - 3:00pm</td>
+                        <td>1:30pm - 3pm</td>
+                        <td>1:30pm - 3pm</td>
+                        <td>1:30pm - 3pm</td>
+                        <td>1:30pm - 3pm</td>
+                        <td>1:30pm - 3pm</td>
                     </tr>
                     <tr>
-                        <td>3:00pm - 4:30pm</td>
-                        <td>3:00pm - 4:30pm</td>
-                        <td>3:00pm - 4:30pm</td>
-                        <td>3:00pm - 4:30pm</td>
-                        <td>3:00pm - 4:30pm</td>
+                        <td>3pm - 4:30pm</td>
+                        <td>3pm - 4:30pm</td>
+                        <td>3pm - 4:30pm</td>
+                        <td>3pm - 4:30pm</td>
+                        <td>3pm - 4:30pm</td>
                     </tr>
                     <tr>
-                        <td>4:30pm - 6:00pm</td>
-                        <td>4:30pm - 6:00pm</td>
-                        <td>4:30pm - 6:00pm</td>
-                        <td>4:30pm - 6:00pm</td>
-                        <td>4:30pm - 6:00pm</td>
+                        <td>4:30pm - 6pm</td>
+                        <td>4:30pm - 6pm</td>
+                        <td>4:30pm - 6pm</td>
+                        <td>4:30pm - 6pm</td>
+                        <td>4:30pm - 6pm</td>
                     </tr>
                 </tbody>
             </table>
@@ -263,6 +258,14 @@
             content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
         }
     </script>
+
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+    
 
 </body>
 
