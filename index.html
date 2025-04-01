@@ -21,13 +21,16 @@
     <nav class="navbar">
         <div class="container">
             <!-- Hamburger Button -->
-            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
     
             <!-- Navigation Links -->
             <ul class="nav-links">
                 <li><a href="index.html">Homepage</a></li>
                 <li><a href="classes.html">Classes</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </div>
     </nav>
@@ -41,7 +44,7 @@
     <!-- Hero Section -->
     <section id="hero" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-out">
         <div class="main-heading">
-            <h1>Reva’s Pole & Aerial Silks Classes </h1> 
+            <h1>Pole & Aerial Silks Classes</h1> 
         <div class="hero-content">
             <p>Hi! I’m Reva. I’m a professionally trained ballet dancer and my love for movement led me to the world of aerial arts. I’ve been training and <strong>teaching pole, silks, and lyra (hoop)</strong>. Whether you’re here to build strength, <strong>try something new </strong>, or embrace your inner dancer, I’d love to be part of your journey!</p>
         </div>
@@ -115,6 +118,13 @@
             <h2>Class Timings</h2>
             <table class="timing-table">
                 <thead>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
                     <tr>
                         <td>12pm - 1:30pm</td>
                         <td>12pm - 1:30pm</td>
@@ -261,10 +271,18 @@
 
 
     <script>
-        function toggleMenu() {
-            document.querySelector(".nav-links").classList.toggle("active");
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to toggle the menu when hamburger is clicked
+            function toggleMenu() {
+                document.querySelector(".nav-links").classList.toggle("active");
+                document.querySelector(".hamburger").classList.toggle("active");
+            }
+    
+            // Attach the toggle function to the hamburger click event
+            document.querySelector(".hamburger").onclick = toggleMenu;
+        });
     </script>
+    
     
 
 </body>
