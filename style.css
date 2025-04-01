@@ -815,22 +815,30 @@ section, .info-card, .merged-section {
 
 /* Dropdown Menu Visibility (Initially hidden) */
 /* Initially hide the dropdown */
+/* Dropdown Menu Visibility (Initially hidden) */
 .nav-links {
     display: none;
+    position: absolute;
+    top: 100%; /* ✅ Places it directly below the hamburger */
+    left: 0; /* ✅ Aligns perfectly with hamburger */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    padding: 10px 0;
+    z-index: 9999;
 }
+
+/* Ensure the dropdown appears below the hamburger */
+.hamburger {
+    position: relative; /* ✅ This makes the dropdown align to it */
+    z-index: 10000; /* ✅ Ensure it's above everything */
+}
+
 
 /* Show the dropdown when active */
 .nav-links.active {
     display: block;
-    position: fixed; /* Fix the dropdown to the left side */
-    top: 60px; /* Positioning the dropdown below the navbar */
-    left: 0;
-    background: rgba(255, 255, 255, 0.9); /* Subtle background */
-    border-radius: 0 12px 12px 0; /* Rounded corners only on the right */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 200px; /* Set width for the dropdown */
-    padding: 10px 0;
-    z-index: 9999; /* Ensure dropdown is on top of other content */
 }
 
 
@@ -838,7 +846,7 @@ section, .info-card, .merged-section {
 .nav-links li {
     display: block;
     width: 100%;
-    border-bottom: 1px solid #e0e0e0; /* Border between the options */
+    border-bottom: 1px solid #e0e0e0;
 }
 
 /* Last item without a border */
@@ -849,33 +857,30 @@ section, .info-card, .merged-section {
 /* Links Style */
 .nav-links a {
     text-decoration: none;
-    color: #6d4caf; /* Purple color */
-    font-size: 14px; /* Smaller font size */
-    font-weight: 500; /* Slightly lighter font weight */
+    color: #6d4caf;
+    font-size: 14px;
+    font-weight: 500;
     padding: 10px 15px;
-    text-align: left; /* Align text to the left */
-    transition: all 0.3s ease; /* Smooth transition */
-    border-radius: 0; /* No rounded corners for links */
-    display: block; /* Make the links block-level for better spacing */
+    text-align: left;
+    transition: all 0.3s ease;
+    display: block;
 }
 
-/* Hover Effect: Change background color & smooth transition */
+/* Hover Effect */
 .nav-links a:hover {
-    background-color: #6d4caf; /* Hover color */
-    color: white; /* Text color changes to white when hovered */
+    background-color: #6d4caf;
+    color: white;
 }
 
-/* Responsive Styles: Mobile View */
+/* Mobile Styles */
 @media (max-width: 768px) {
     .nav-links {
-        flex-direction: column;
-        gap: 10px;
+        width: 100%;
         padding: 0 20px;
-        width: 100%; /* Full width on mobile */
     }
 
     .nav-links a {
-        font-size: 16px; /* Slightly bigger font for better readability on mobile */
+        font-size: 16px;
         padding: 12px 20px;
     }
 }
