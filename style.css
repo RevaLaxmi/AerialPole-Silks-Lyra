@@ -119,6 +119,8 @@ h2 {
     font-size: 18px;
 }
 
+
+
 /* Map Image Styling */
 .map-image {
     width: 100%;
@@ -126,6 +128,7 @@ h2 {
     max-width: 600px; /* Optional: limit max width for larger devices */
     border-radius: 8px;
     margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 .dropdown-content {
@@ -138,7 +141,7 @@ h2 {
 
 .map-embed {
     text-align: center;
-    margin-top: opx;
+    margin-top: 0px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
