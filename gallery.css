@@ -1,0 +1,64 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Instagram Section */
+.instagram-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.instagram-container {
+    display: flex;
+    gap: 15px;
+}
+
+.instagram-media {
+    transform: scale(0.8); /* Adjust this to make it smaller */
+    transform-origin: top left; /* Keeps alignment correct */
+    width: 100% !important;
+    max-width: 320px !important; /* Adjust max width */
+}
+
+
+/* Gallery Container */
+.gallery-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Masonry Grid Layout */
+.gallery-grid {
+    column-count: 3;
+    column-gap: 15px;
+}
+
+/* Image Items */
+.gallery-item {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.youtube-video iframe {
+    width: 100%; /* Make it responsive */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,788 @@
+/*Deciding the fonts*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f9f9fc;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Hero Section Fix */
+#hero {
+    background: #f9f9fc;
+    padding: 100px 20px 50px; /* 100px to account for navbar height */
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* Prevent margin/padding issues */
+}
+
+#hero {
+    margin-bottom: 20px; /* Reduce space after hero */
+}
+
+#hero {
+
+    padding-bottom: 10px; /* Reduce space inside the hero section */
+}
+
+/* WhatsApp Link Styling */
+
+a[href^="https://wa.me/"] {
+    color: #000000; /* Optional: slightly lighter color when hovered */
+    text-decoration: underline; /* Optional: add an underline on hover */
+}
+
+
+
+
+/* Ensure no extra margin/padding at the top */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 60px; /* Define navbar height */
+}
+
+/* Push content below navbar */
+body {
+    padding-top: 100px; /* EXACT height of navbar to prevent overlap */
+}
+
+
+.info-card,
+.merged-section,
+.dropdown,
+.terms-link-section {
+    margin-top: 60px; /* Increased gap between sections */
+}
+
+
+/* Container for Hero Content */
+.hero-content {
+    max-width: 800px; /* Keeps content centered and narrow */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 0 20px; /* Prevents content from touching the edges */
+}
+
+.hero-content h1 {
+    font-size: 26px;
+    color: #6d4caf;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 14px;
+    margin-top: 0;
+    color: #555;
+    line-height: 1.6; /* Better spacing for readability */
+}
+
+
+
+/* Main Container */
+.container {
+    width: 90%; /* Takes up 90% of the screen width */
+    max-width: 1200px; /* Prevents stretching too much on wide screens */
+    margin: 20px auto;
+    padding: 15px;
+}
+
+/* Info Cards */
+.info-card {
+    background: #fff;
+    padding: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0; /* Border instead of shadow */
+}
+
+/* Merged Sections */
+.merged-section {
+    background-color: #fff;
+    padding: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+/* Headings */
+h1, h2 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+h2 {
+    color: #6d4caf;
+    font-size: 18px;
+}
+
+/* Map Image Styling */
+.map-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Optional: limit max width for larger devices */
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.dropdown-content {
+    width: 100%;
+}
+
+.map-image:hover {
+    transform: scale(1.01); /* Subtle hover */
+}
+
+.map-embed {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+
+
+
+
+
+
+
+/* Timing Table */
+/* Class Timings Section (Clean Look) */
+/* Class Timings Section (Updated Layout) */
+.class-timings-section {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Section Title */
+.class-timings-section h2 {
+    font-family: 'Lora', serif; /* Elegant font */
+    color: #333; /* Dark gray for the title */
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Booking note */
+.booking-note {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Timing Table */
+.timing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;
+}
+
+.timing-table th, .timing-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.timing-table th {
+    background-color: #f3e5f5; /* Light purple for headers */
+    color: #6d4caf;
+    font-size: 16px;
+}
+
+.timing-table td {
+    color: #333;
+    font-size: 14px;
+}
+
+/* Adding some space between rows */
+.timing-table tr:not(:last-child) {
+    border-bottom: 2px solid #eee;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .timing-table th, .timing-table td {
+        font-size: 12px; /* Slightly smaller font size */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Class Etiquette List */
+.etiquette-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+.etiquette-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.etiquette-list li:last-child {
+    border-bottom: none;
+}
+
+
+
+/* Dropdown Buttons */
+.dropdown {
+    margin-top: 8px;
+}
+
+.dropdown-btn {
+    width: 100%;
+    background-color: #e8b6ff;
+    color: #000000;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.dropdown-btn:hover {
+    background-color: #fca7ff;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    padding: 10px 12px;
+    background-color: #f9f9fc;
+    border-top: 1px solid #f0f0f0;
+    border-radius: 0 0 6px 6px;
+    font-size: 13px;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-content li:last-child {
+    border-bottom: none;
+}
+
+/* Styled WhatsApp Link */
+.whatsapp-link {
+    display: inline; /* Behaves like a normal link */
+    text-align: center;
+    color: #a87dff; /* Soft Purple */
+    text-decoration: underline; /* Underlined */
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 1.5px rgb(185, 151, 255); /* Subtle glow */
+}
+
+.whatsapp-link:hover {
+    color: #4a148c; /* Darker Purple on Hover */
+    text-decoration: none; /* No underline on hover */
+    text-shadow: 0 0 10px rgba(74, 20, 140, 0.6); /* Stronger glow on hover */
+}
+
+/* Centered Parent for Proper Alignment */
+.center-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 12px;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Slightly more width for smaller devices */
+        padding: 12px;
+    }
+
+    .hero-content h1 {
+        font-family: 'Lora', serif; /* Elegant font */
+        font-size: 22px; /* Reduce heading size */
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+    .btn, .dropdown-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+.main-heading {
+    margin-top: 30px;
+    font-family: 'Lora', serif; /* Elegant font */
+    font-size: 20px; /* Reduce heading size */
+}
+
+/*media query for phone responsiveness*/
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .timing-table th, .timing-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .dropdown-btn {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .whatsapp-link {
+        font-size: 14px;
+    }
+}
+
+.hero-content h1 {
+    margin-bottom: 20px; /* Adjust this value for more or less space */
+}
+
+
+
+/* Merged Section: Pole & Silks + Class Syllabus */
+#classes {
+    background-color: #f9f9fc;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+#classes h2 {
+    text-align: center;
+    color: #6d4caf;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.class-info, .syllabus-info {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.class-info h3, .syllabus-info h3 {
+    font-size: 18px;
+    color: #4a148c;
+    margin-bottom: 12px;
+}
+
+.class-info p, .syllabus-info ul {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.syllabus-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.syllabus-info li {
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.syllabus-info li:last-child {
+    border-bottom: none;
+}
+
+
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3); /* More transparency */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    padding: 6px 20px; /* Slimmer height */
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo & Container Slimmer */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Slimmer */
+.logo {
+    font-size: 18px; /* Slightly smaller */
+    font-weight: bold;
+    color: #6d4caf; /* Purple Text */
+    text-decoration: none;
+}
+
+/* Nav Links Slimmer */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Less spacing between links */
+}
+
+/* Slimmer Links */
+.nav-links a {
+    text-decoration: none;
+    color: #6d4caf; /* Purple Text */
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 4px 10px; /* Smaller padding */
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: #4a148c; /* Darker purple on hover */
+}
+
+
+/* Adding the scrolling hue */
+/* Main Background Scroll Effect */
+/* Base Background */
+body {
+    background: #f9f9fc; /* Light base */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Gradient Overlay Positioned Higher */
+.gradient-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh; /* Increase height to bring it up */
+    background: linear-gradient(to bottom, transparent 20%, #f9f9fc 50%, hsl(271, 100%, 95%) 80%, #eaceff);
+    pointer-events: none; /* Prevents blocking interactions */
+    z-index: -1; /* Ensures it stays behind content */
+}
+
+/* Optional: Smooth Transition for Content */
+section, .info-card, .merged-section {
+    transition: background 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+/* Terms Link Section */
+/* Style for "Visit the gallery" link */
+.terms-link {
+    font-size: 12px; /* Adjust the size if needed */
+    text-decoration: underline; /* Underline the link by default */
+    color: #4a148c; /* Adjust the color as needed */
+    display: block; /* Make it a block-level element to center */
+    text-align: center; /* Center the link horizontally */
+    margin: 20px 0; /* Optional: Add margin for spacing */
+}
+
+/* Optional: Hover effect for the link */
+.terms-link:hover {
+    color: #8a2be2; /* Change the color on hover if desired */
+    text-decoration: underline; /* Keep the underline on hover */
+}
+
+
+/* Terms Page Styles */
+.terms-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #f9f9fc;
+    border: 1px solid #eae0f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.terms-content h1 {
+    font-size: 26px;
+    color: #6d4caf;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.terms-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.terms-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.terms-list li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    padding-left: 20px;
+    position: relative;
+}
+
+.terms-list li::before {
+    position: absolute;
+    left: 0;
+    color: #6d4caf;
+    font-size: 14px;
+}
+
+/* Button to Return Home */
+.back-home {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-back {
+    background-color: #6d4caf;
+    color: #fff;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #4a148c;
+}
+
+
+/* Instagram Section */
+.instagram-section {
+    padding: 40px 20px;
+    background-color: #f9f9fc;
+    text-align: center;
+    margin-top: -20px; /* Reduced margin */
+
+}
+
+/* Heading Style */
+.instagram-section h2 {
+    font-size: 22px;
+    color: #585656;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Instagram Grid Layout */
+/* Instagram Grid Container */
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Individual Instagram Post Styling */
+.instagram-item iframe {
+    width: 100%;
+    height: 400px; /* Adjust height for videos if necessary */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for a clean look */
+}
+
+/* Optional: Hover Effect */
+.instagram-item:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .instagram-grid {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+    }
+    
+    .instagram-item iframe {
+        height: 300px; /* Smaller height for mobile */
+    }
+}
+
+
+/* Instagram Section */
+.instagram-section {
+    padding: 40px 20px;
+    background-color: #f9f9fc;
+    text-align: center;
+}
+
+/* Heading */
+.instagram-section h2 {
+    font-size: 24px;
+    color: #585656;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Instagram Grid */
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Instagram Item */
+.instagram-item {
+    text-align: center;
+}
+
+/* Instagram Images */
+.instagram-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Square shape */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.instagram-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Instagram Link */
+.insta-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #585656;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+/* Hover Link */
+.insta-link:hover {
+    color: #ff4081;
+}
+
+
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+
+
+
+/*WHATSAPP CHAT BOX HOVER BUTTON*/
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffbdff;  
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Prevents any extra content from being cut */
+  }
+  
+.whatsapp-icon {
+    width: 60%; /* Adjust to fit inside the circle */
+    height: 60%; /* Keep proportions */
+  }
+  
+.whatsapp-float {
+    padding: 5px; /* Adds space inside the container */
+  }
+  
