@@ -142,7 +142,6 @@
                         <td>x</td>
                         <td>x</td>
                         <td>3pm - 4:30pm</td>
-                    
                     </tr>
 
                 </tbody>
@@ -187,6 +186,16 @@
         <!-- Fee Structure with Collapsible Dropdown -->
         <section class="info-card" data-aos="fade-in" data-aos-duration="600">
             <h2>Fee Structure</h2>
+
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown('groups')">Group classes</button>
+                <div class="dropdown-content" id="groups">
+                    <ul>
+                        <li>1 session drop in: ₹400</li>
+                        <li>Monthly package - 8 classes: ₹3500</li>
+                    </ul>
+                </div>
+            </div>
 
             <div class="dropdown">
                 <button class="dropdown-btn" onclick="toggleDropdown('privates')">Privates (1-on-1 Sessions)</button>
